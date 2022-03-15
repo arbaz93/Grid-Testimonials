@@ -2,7 +2,7 @@
 
 - [The challenge](Testimonials built with CSS grid)
 - [Screenshot](./design/desktop-design.jpg)
-- [Links](#links)
+
 - [Author](Arbaz Yousaf)
 - [Acknowledgments](Front and Mentor)
 
