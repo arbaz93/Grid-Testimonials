@@ -1,6 +1,6 @@
 ## Table of contents
 
-- [The challenge](Testimonials built with CSS grid)
+- [The challenge]: (Testimonials built with CSS grid)
 - [Screenshot](./design/desktop-design.jpg)
 
 - Author: (Arbaz Yousaf)
