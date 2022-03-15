@@ -6,8 +6,7 @@
 - [Author](Arbaz Yousaf)
 - [Acknowledgments](Front and Mentor)
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://arbaz93.github.io/Grid-Testimonials/]
 
 ### Built with
 
