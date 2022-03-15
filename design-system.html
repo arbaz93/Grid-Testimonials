@@ -1,0 +1,56 @@
+<html>
+  <head>
+    <title>Design system</title>
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Bellefair&family=Barlow:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background-color: rebeccapurple;
+      }
+      .container {
+        max-width: 90%;
+        min-height: 100vh;
+        display: grid;
+        gap: 1rem;
+        grid-template-areas:
+          "one three"
+          "two three";
+        margin-inline: auto;
+      }
+      .container img:nth-child(1) {
+        grid-area: one;
+        place-self: end;
+      }
+      .container img:nth-child(2) {
+        grid-area: two;
+      }
+      .container img:nth-child(3) {
+        grid-area: three;
+      }
+      img,
+      picture {
+        width: 100%;
+        align-self: start;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container flow">
+      <img src="./design/desktop-design.jpg" alt="desktop-preview" />
+      <img src="./design/desktop-preview.jpg" alt="desktop-preview" />
+      <img src="./design/mobile-design.jpg" alt="mobile-preview" />
+    </div>
+  </body>
+</html>

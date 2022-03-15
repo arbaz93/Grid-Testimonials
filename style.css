@@ -1,0 +1,205 @@
+:root {
+  --clr-primary: 263 55% 52%; /* violet */
+  --clr-secondary-300: 217 19% 35%; /* Very dark grayish blue:*/
+  --clr-secondary-600: 219 29% 14%; /* Very dark blakish blue:*/
+  --clr-neutral-100: 210 46% 95%; /* light gray | background color */
+  --clr-white: 0 0% 100%; /* white */
+
+  /* font family */
+  --ff-primary: "Barlow Semi Condensed", sans-serif;
+
+  /* font weight */
+  --fw-200: 500;
+  --fw-400: 600;
+
+  /* font size */
+  --fs-300: 0.6875rem;
+  --fs-400: 0.8125rem;
+  --fs-500: 1.25rem;
+}
+
+/* -------------- */
+/* Reset          */
+/* -------------- */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h2,
+p {
+  margin: 0;
+}
+
+/* setting body defaults */
+body {
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+
+  text-rendering: optimizeSpeed;
+  font-family: var(--ff-primary);
+  font-weight: var(--fw-200);
+
+  background-color: hsl(var(--clr-neutral-100));
+}
+
+h2 {
+  font-weight: var(--fw-400);
+}
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* ------------------ */
+/* Utiity classes     */
+/* ------------------ */
+
+.flex {
+  display: flex;
+  gap: var(--gap, 1em);
+}
+
+.flow > *:where(:not(:first-child)) {
+  margin-top: var(--flow-spacer, 1em);
+}
+
+.bg-primary {
+  background-color: hsl(var(--clr-primary));
+  color: hsl(var(--clr-white));
+}
+.bg-secondary-300 {
+  background-color: hsl(var(--clr-secondary-300));
+  color: hsl(var(--clr-neutral-100));
+}
+.bg-secondary-600 {
+  background-color: hsl(var(--clr-secondary-600));
+  color: hsl(var(--clr-neutral-100));
+}
+.bg-white {
+  background-color: hsl(var(--clr-white));
+  color: hsl(var(--clr-secondary-600));
+}
+.bg-quote {
+  background-image: url("./images/bg-pattern-quotation.svg");
+  background-repeat: no-repeat;
+  background-position: top right 10%;
+}
+
+/* --------------- */
+/* components      */
+/* --------------- */
+.testimonial-grid {
+  width: min(95%, 70rem);
+  padding-block: 2rem;
+}
+
+.testimonial {
+  display: grid;
+  gap: 1rem;
+  padding: 2rem;
+
+  height: 100%;
+  font-size: var(--fs-400);
+
+  border-radius: 0.5rem;
+  box-shadow: 2.5rem 3.75rem 3rem -3rem hsl(var(--clr-secondary-600) / 0.25);
+}
+
+.testimonial .flex {
+  align-items: center;
+}
+.testimonial img {
+  width: 3em;
+  aspect-ratio: 1;
+
+  border: 2px solid #a775f1;
+  border-radius: 50%;
+}
+
+.testimonial .name {
+  font-size: var(--fs-400);
+  font-weight: var(--fs-500);
+  line-height: 1;
+}
+.testimonial .position {
+  font-size: var(--fs-300);
+  opacity: 0.5;
+}
+
+.testimonial > p:first-of-type {
+  font-size: var(--fs-500);
+}
+.testimonial > p:last-of-type {
+  font-size: var(--fs-400);
+  line-height: 1.5;
+  opacity: 0.7;
+}
+
+/* Layout Setup */
+.testimonial-grid {
+  display: grid;
+  gap: 1.2em;
+  grid-auto-columns: 1fr;
+  grid-template-areas:
+    "one"
+    "two"
+    "three"
+    "four"
+    "five";
+}
+.testimonial:nth-child(1) {
+  grid-area: one;
+}
+.testimonial:nth-child(2) {
+  grid-area: two;
+}
+.testimonial:nth-child(3) {
+  grid-area: three;
+}
+.testimonial:nth-child(4) {
+  grid-area: four;
+}
+.testimonial:nth-child(5) {
+  grid-area: five;
+}
+@media (min-width: 32rem) {
+  .testimonial-grid {
+    grid-template-areas:
+      "one one"
+      "two three"
+      "five five"
+      "four four";
+  }
+}
+@media (min-width: 38rem) {
+  .testimonial-grid {
+    grid-template-areas:
+      "one one"
+      "two five"
+      "three five"
+      "four four";
+  }
+}
+@media (min-width: 52rem) {
+  .testimonial-grid {
+    grid-template-areas:
+      "one one two"
+      "five five five"
+      "three four four";
+  }
+}
+@media (min-width: 72rem) {
+  .testimonial-grid {
+    grid-template-areas:
+      "one one two five"
+      "three four four five";
+  }
+}
