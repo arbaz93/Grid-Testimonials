@@ -3,8 +3,8 @@
 - [The challenge](Testimonials built with CSS grid)
 - [Screenshot](./design/desktop-design.jpg)
 
-- [Author](Arbaz Yousaf)
-- [Acknowledgments](Front and Mentor)
+- Author: (Arbaz Yousaf)
+- Acknowledgments: (Front and Mentor)
 
 - Solution URL: [https://arbaz93.github.io/Grid-Testimonials/]
 
