@@ -1,14 +1,13 @@
 ## Table of contents
 
 - [The challenge]: (Testimonials built with CSS grid)
-- ![Screenshot](./design/desktop-design.jpg)
+- Solution URL: [https://arbaz93.github.io/Grid-Testimon
+![Screenshot](./design/desktop-design.jpg)
 
-- Author: (Arbaz Yousaf)
-- Acknowledgments: (Front and Mentor)
+### Author: Arbaz Yousaf
+### Acknowledgments: Front and Mentor
 
-- Solution URL: [https://arbaz93.github.io/Grid-Testimonials/]
-
-### Built with
+## Built with
 
 - Semantic HTML5 markup
 - CSS custom properties
