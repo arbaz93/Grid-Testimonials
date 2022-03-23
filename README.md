@@ -1,7 +1,7 @@
 ## Table of contents
 
 - [The challenge]: (Testimonials built with CSS grid)
-- Solution URL: [https://arbaz93.github.io/Grid-Testimon
+- Solution URL: [https://arbaz93.github.io/Grid-Testimonials/]
 ![Screenshot](./design/desktop-design.jpg)
 
 ### Author: Arbaz Yousaf
